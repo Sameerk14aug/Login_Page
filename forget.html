@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="forget.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="forget-container">
+        <div class="brand">
+            <img src="images.jfif" alt="Company Logo" width="80" height="80">
+            <h2>Reset Password</h2>
+            <p class="subtitle">Enter your email address and we'll send you a link to reset your password.</p>
+        </div>
+        <form id="forgetForm" novalidate>
+            <div class="input-group">
+                <i class="fas fa-envelope icon"></i>
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email" 
+                    required
+                    aria-describedby="email-error"
+                    autocomplete="email">
+                <div class="error-message" id="email-error" role="alert"></div>
+            </div>
+            <button type="submit" id="submit-btn">
+                <span class="btn-text">Send Reset Link</span>
+                <i class="fas fa-arrow-right btn-icon"></i>
+            </button>
+            <div class="back-to-login">
+                <i class="fas fa-chevron-left"></i>
+                <a href="login.html">Back to Login</a>
+            </div>
+        </form>
+    </div>
+    <script src="forget.js"></script>
+</body>
+</html>
